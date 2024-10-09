@@ -1,0 +1,10 @@
+service :
+  simple-apps:
+    image: teguhw17/simple-apps
+    build: ./apps
+    ports:
+      - 3000:3000
+    volumes:
+      - vol-simple-app: /app/public
+volumes :
+  vol-simple-app:
